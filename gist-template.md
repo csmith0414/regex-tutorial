@@ -1,10 +1,12 @@
-# Title (replace with your title)
+# Regular Expressions Tutorial
 
-Introductory paragraph (replace this with your text)
+This gist is to give a tutorial on what a regular expression (regex) is and how they can be used. A Regex is a way of describing patterns in a string of data, which allows you to search for data strings that match that pattern. Regexs are important part of programming languages like JavaScript, Phython, PHP, Java and others.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This gist is going to cover how to use a Regex for matching emails. This can be used to validate if an email is followng the correct format that is necessary. 
+
+Matching Email - /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -21,7 +23,17 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+The anchor is used to start and end the regex. In the matching email code, /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ the anchors would be the up carrot (^) and the  dollar sign ($). This email matching code is saying we are looking for something that starts with ^([a-z0-9_\.-]+).
+
+Defining what everything means within the parentheses will be done later in the tutorial, but the anchor is looking for a match while following these initial guidelines. 
+
+The code also ends with .([a-z\.]{2,6})$.
+
+The code must start and end with parameters within the code or it will not match.
+
 ### Quantifiers
+
+
 
 ### Grouping Constructs
 
